@@ -36,7 +36,12 @@ img {
     align-items: center;
     display: flex;
     position: relative;
+    z-index: -2;
 
+}
+
+.profile_banner * {
+    z-index: -1;
 }
 
 .profile_username {
@@ -122,15 +127,14 @@ img {
 }
 
 .pfp_wrapper_main {
-    width: 300px;
-    height: 300px;
+    width: 60%;
+    height: 60%;
     border-radius: 150px;
     overflow: hidden;
     border: black 5px solid;
     box-shadow: rgba(0, 0, 0, 1) 0px 15px 30px;
 }
 
-.pfp_wrapper_main {}
 
 .user_data {
     margin-top: 25px;
@@ -201,7 +205,7 @@ img {
     cursor: pointer;
     position: absolute;
     font-size: 15px;
-    color:black;
+    color: black;
     text-align: center;
     width: 20px;
     height: 20px;
@@ -209,9 +213,61 @@ img {
     background-color: red;
 }
 
-.contact_wrapper{
+.contact_wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (max-width: 840px) {
+
+    .contact_wrapper {}
+
+    .profile_page {
+        width: 100%;
+    }
+
+    .profile_wrapper {
+        width: 100vw;
+        margin: 0;
+    }
+
+    .menu_wrapper {
+        position: absolute;
+
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .pfp_wrapper_main {
+        width: 150px;
+        background-color: red;
+    }
+
+    .profile_page {
+        width: 100%;
+    }
+
+    .profile_wrapper {
+        width: 100vw;
+        margin: 0;
+    }
+
+    .menu_wrapper {
+        position: absolute;
+
+    }
+
+    .profile_body{
+        display: flex;
+        flex-direction: column;
+    }
+    .liked_posts_wrapper{
+        height: 100vh;
+        border: none;
+    }
+
 }

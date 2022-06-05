@@ -89,7 +89,8 @@ const styles = {
         display: 'grid',
         gridAutoRows: '10px',
         justifyContent: 'center',
-        gridTemplateColumns: 'repeat(auto-fill, 350px)'
+        gridTemplateColumns: 'repeat(auto-fill, 350px)',
+        zIndex:'-1'
     },
     post_container_small: {
         margin: 0,
